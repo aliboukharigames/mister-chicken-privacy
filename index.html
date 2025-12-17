@@ -1,391 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Privacy Policy – Mr Chicken: Slot Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        :root {
-            --bg: #0b130c;
-            --card: #151f12;
-            --accent: #f6b845;
-            --accent-soft: #ffe6a8;
-            --text-main: #fdfdf5;
-            --text-soft: #c9d3c0;
-            --border-soft: #2a3a27;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background: radial-gradient(circle at top, #24351f 0, #0b130c 55%, #050806 100%);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
-
-        .page {
-            min-height: 100vh;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            padding: 40px 16px;
-        }
-
-        .card {
-            max-width: 860px;
-            width: 100%;
-            background: linear-gradient(140deg, var(--card), #10190f);
-            border-radius: 24px;
-            border: 1px solid var(--border-soft);
-            box-shadow:
-                0 24px 60px rgba(0, 0, 0, 0.7),
-                0 0 0 1px rgba(255, 255, 255, 0.02);
-            padding: 28px 22px 30px;
-        }
-
-        @media (min-width: 720px) {
-            .card {
-                padding: 32px 36px 36px;
-            }
-        }
-
-        .badge-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 16px;
-        }
-
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 6px 12px;
-            border-radius: 999px;
-            background: rgba(24, 36, 18, 0.96);
-            border: 1px solid rgba(238, 210, 140, 0.55);
-            color: #fff8d7;
-            font-size: 12px;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-        }
-
-        .badge-icon {
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 26px;
-            margin: 0 0 6px;
-            letter-spacing: 0.02em;
-        }
-
-        .subtitle {
-            color: var(--text-soft);
-            font-size: 15px;
-            margin-bottom: 18px;
-        }
-
-        .meta {
-            font-size: 13px;
-            color: var(--text-soft);
-            margin-bottom: 24px;
-        }
-
-        .meta span {
-            display: inline-block;
-            margin-right: 14px;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
-            margin: 18px 0 22px;
-        }
-
-        h2 {
-            font-size: 18px;
-            margin: 20px 0 6px;
-        }
-
-        p {
-            font-size: 14px;
-            margin: 6px 0 10px;
-        }
-
-        ul {
-            padding-left: 20px;
-            margin: 4px 0 10px;
-        }
-
-        li {
-            font-size: 14px;
-            margin-bottom: 4px;
-        }
-
-        .section-tagline {
-            font-size: 13px;
-            color: var(--accent-soft);
-            margin-bottom: 4px;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-        }
-
-        .highlight-box {
-            border-radius: 18px;
-            border: 1px solid rgba(246, 184, 69, 0.4);
-            background: radial-gradient(circle at top left, rgba(246, 184, 69, 0.18), rgba(7, 10, 5, 0.96));
-            padding: 14px 14px 14px 16px;
-            margin: 10px 0 18px;
-        }
-
-        .highlight-title {
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--accent-soft);
-            margin-bottom: 4px;
-        }
-
-        .highlight-text {
-            font-size: 13px;
-            color: var(--text-soft);
-        }
-
-        .rows {
-            display: grid;
-            gap: 12px;
-            margin-top: 4px;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            align-items: baseline;
-            font-size: 14px;
-        }
-
-        .row-label {
-            font-weight: 600;
-            min-width: 120px;
-            color: var(--accent-soft);
-        }
-
-        .row-value {
-            color: var(--text-soft);
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .footer-note {
-            margin-top: 20px;
-            font-size: 12px;
-            color: var(--text-soft);
-            opacity: 0.9;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Mister Chicken — Privacy Policy</title>
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --card:#11131a;
+      --text:#e9ecf1;
+      --muted:#b7bfcc;
+      --line:rgba(255,255,255,.10);
+      --accent:#f7c84b;
+      --accent2:#ff6b6b;
+      --shadow: 0 14px 40px rgba(0,0,0,.35);
+      --radius:18px;
+      --max: 920px;
+      --pad: 22px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f7f8fb;
+        --card:#ffffff;
+        --text:#151821;
+        --muted:#4a5568;
+        --line:rgba(0,0,0,.08);
+        --shadow: 0 14px 40px rgba(10,20,40,.12);
+      }
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--text);
+      background:
+        radial-gradient(1100px 520px at 18% -10%, rgba(247,200,75,.25), transparent 60%),
+        radial-gradient(900px 500px at 95% 10%, rgba(255,107,107,.20), transparent 55%),
+        radial-gradient(900px 520px at 60% 110%, rgba(120,210,255,.18), transparent 60%),
+        var(--bg);
+      line-height:1.6;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding: 34px 16px 54px;}
+    header{
+      padding: 18px 6px 18px;
+      display:flex; gap:14px; align-items:center; justify-content:space-between;
+      border-bottom:1px solid var(--line);
+      margin-bottom:18px;
+    }
+    .brand{
+      display:flex; gap:12px; align-items:center;
+      min-width: 0;
+    }
+    .logo{
+      width:44px; height:44px; border-radius:14px;
+      display:grid; place-items:center;
+      background: linear-gradient(135deg, rgba(247,200,75,.95), rgba(255,107,107,.85));
+      box-shadow: var(--shadow);
+      flex: 0 0 auto;
+    }
+    .logo span{font-size:22px; filter: drop-shadow(0 8px 14px rgba(0,0,0,.25));}
+    h1{
+      font-size: 20px; margin:0;
+      letter-spacing:.2px;
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    }
+    .subtitle{margin:0; color:var(--muted); font-size:13px}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px; border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color:var(--muted);
+      font-size:12px;
+    }
+    main{margin-top:18px}
+    .card{
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: var(--pad);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+      margin:14px 0 0;
+    }
+    @media (min-width: 840px){
+      .grid{grid-template-columns: 1.1fr .9fr;}
+    }
+    h2{
+      font-size: 15px;
+      margin: 0 0 8px;
+      letter-spacing:.2px;
+    }
+    p{margin: 0 0 10px; color: var(--text)}
+    ul{margin: 8px 0 0; padding-left: 18px; color: var(--text)}
+    li{margin: 6px 0}
+    .muted{color: var(--muted)}
+    .callout{
+      border-radius: 16px;
+      padding: 14px 14px;
+      border: 1px dashed rgba(247,200,75,.35);
+      background: linear-gradient(180deg, rgba(247,200,75,.10), rgba(255,255,255,0));
+    }
+    .kpi{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+      margin-top:10px;
+    }
+    .kpi .box{
+      border:1px solid var(--line);
+      border-radius: 16px;
+      padding: 12px;
+      background: rgba(255,255,255,.03);
+    }
+    .kpi .big{font-weight:700; font-size:14px}
+    .kpi .small{font-size:12px; color:var(--muted); margin-top:2px}
+    footer{
+      margin-top:16px;
+      padding: 14px 6px 0;
+      color: var(--muted);
+      font-size: 12px;
+      border-top:1px solid var(--line);
+    }
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;}
+  </style>
 </head>
+
 <body>
-<div class="page">
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"><span>🐔</span></div>
+        <div style="min-width:0">
+          <h1>Mister Chicken — Privacy Policy</h1>
+          <p class="subtitle">Simple, transparent, and written for humans.</p>
+        </div>
+      </div>
+      <div class="pill" title="Last updated date">
+        <span aria-hidden="true">🗓️</span>
+        <span class="mono">Last updated: 2025-12-17</span>
+      </div>
+    </header>
+
     <main class="card">
-        <div class="badge-row">
-            <div class="badge">
-                <span class="badge-icon">🐔</span>
-                <span>Coop-Friendly Privacy</span>
-            </div>
-            <div class="badge">
-                <span class="badge-icon">🥚</span>
-                <span>No Data Collected</span>
-            </div>
-            <div class="badge">
-                <span class="badge-icon">🔞</span>
-                <span>Entertainment 18+ Only</span>
-            </div>
-        </div>
-
-        <h1>Privacy Policy</h1>
-        <div class="subtitle">
-            for the mobile game <strong>“Mr Chicken: Slot Game”</strong>
-        </div>
-
-        <div class="meta">
-            <span><strong>Effective date:</strong> 05 December 2025</span>
-            <span><strong>Last updated:</strong> 05 December 2025</span>
-        </div>
-
-        <hr>
-
-        <section>
-            <div class="section-tagline">Straight from the coop</div>
-            <h2>1. Introduction</h2>
-            <p>
-                Welcome to <strong>Mr Chicken: Slot Game</strong> (“we”, “us”, or “our”). This Privacy Policy explains how
-                we handle your information when you download and use the app.
-            </p>
-            <p>
-                Think of this app as a small digital chicken coop: bright, noisy, and full of spinning fun — but with no hidden
-                data traps behind the hay bales. We do not track you, we do not profile you, and we are not interested in
-                harvesting your personal details.
-            </p>
-
-            <div class="highlight-box">
-                <div class="highlight-title">Key Promise</div>
-                <div class="highlight-text">
-                    Mr Chicken: Slot Game does <strong>not</strong> collect, store, sell, or share any personal data from players.
-                </div>
-            </div>
-
-            <p>
-                The game uses virtual coins and slot-style mechanics for entertainment only. There is
-                <strong>no real-money gambling</strong>, no cash-out, and no opportunity to win real-world prizes.
-            </p>
-        </section>
-
-        <section>
-            <div class="section-tagline">No grains of data gathered</div>
-            <h2>2. Information We Do Not Collect</h2>
-            <p>
-                While you are spinning reels in the chicken coop, we do <strong>not</strong> collect any information that can
-                identify you or describe how you use the app. In particular, we do not collect:
-            </p>
-            <ul>
-                <li>Names, email addresses, phone numbers, or other contact details;</li>
-                <li>Location data (precise or approximate);</li>
-                <li>Advertising identifiers or device identifiers;</li>
-                <li>Payment or banking information;</li>
-                <li>In-game behavior analytics or usage statistics tied to your identity;</li>
-                <li>Any other personal or sensitive information.</li>
-            </ul>
-            <p>
-                The app is designed so that your activity stays inside your device, like a hen that never leaves the coop.
-            </p>
-        </section>
-
-        <section>
-            <div class="section-tagline">No third-party foxes</div>
-            <h2>3. Third-Party Services</h2>
-            <p>
-                Mr Chicken: Slot Game does not integrate the following:
-            </p>
-            <ul>
-                <li>Third-party analytics or tracking tools;</li>
-                <li>Advertising networks or ad trackers;</li>
-                <li>Social media plugins;</li>
-                <li>External login or account systems.</li>
-            </ul>
-            <p>
-                In other words, there are no third-party “foxes” sneaking around the coop trying to collect your data.
-            </p>
-        </section>
-
-        <section>
-            <div class="section-tagline">Virtual coins only</div>
-            <h2>4. No Real-Money Gambling</h2>
-            <p>
-                The app uses <strong>virtual coins and in-game rewards</strong> for entertainment only. These have no cash value
-                and cannot be redeemed for real money, goods, or services.
-            </p>
-            <ul>
-                <li>You cannot deposit or withdraw real money through the app;</li>
-                <li>You cannot convert virtual items into any form of real-world currency;</li>
-                <li>The game is not a real-money gambling product.</li>
-            </ul>
-            <p>
-                Wins, losses, and “jackpots” inside the game are purely playful moments inside the digital chicken coop.
-            </p>
-        </section>
-
-        <section>
-            <div class="section-tagline">Local coop only</div>
-            <h2>5. Data Storage and Security</h2>
-            <p>
-                Since we do <strong>not</strong> collect personal data, we do not maintain any player profiles or user accounts
-                on our own servers.
-            </p>
-            <p>
-                Any basic settings or progress that may exist are handled by your device and its operating system. If you remove
-                the app from your phone or tablet, this local information may be deleted by the system as well.
-            </p>
-        </section>
-
-        <section>
-            <div class="section-tagline">18+ only in this coop</div>
-            <h2>6. Age and Children’s Privacy</h2>
-            <p>
-                Mr Chicken: Slot Game is designed and intended <strong>for adults aged 18 and over</strong> only.
-            </p>
-            <ul>
-                <li>The app includes slot-style gameplay which is not suitable for children;</li>
-                <li>The app should not be used by anyone under the age required by local laws for similar content;</li>
-                <li>We do not knowingly collect personal data from children.</li>
-            </ul>
-            <p>
-                If you are a parent or guardian and believe a child has accessed the app inappropriately, we recommend removing
-                the app from the device.
-            </p>
-        </section>
-
-        <section>
-            <div class="section-tagline">If the coop rules change</div>
-            <h2>7. Changes to This Privacy Policy</h2>
-            <p>
-                If we ever introduce new features that require processing personal data, this Privacy Policy will be updated
-                before any such changes take effect. Any update would:
-            </p>
-            <ul>
-                <li>Describe clearly what information is collected and why;</li>
-                <li>Explain how it is stored and protected;</li>
-                <li>Comply with applicable privacy laws and platform rules.</li>
-            </ul>
-            <p>
-                Until such an update appears here, you can assume the current promise stands:
-                <strong>your personal data is not being collected.</strong>
-            </p>
-        </section>
-
-        <section>
-            <div class="section-tagline">Contact the coop keeper</div>
-            <h2>8. Contact</h2>
-            <p>
-                If you have any questions about this Privacy Policy, or if something here feels unclear, you can contact the
-                person responsible for this digital chicken coop:
-            </p>
-
-            <div class="rows">
-                <div class="row">
-                    <div class="row-label">App name:</div>
-                    <div class="row-value">Mr Chicken: Slot Game</div>
-                </div>
-                <div class="row">
-                    <div class="row-label">Contact email:</div>
-                    <div class="row-value">
-                        <a href="mailto:lue.duenxf@emergia-fin.site">lue.duenxf@emergia-fin.site</a>
-                    </div>
-                </div>
-            </div>
-
-            <p style="margin-top: 10px;">
-                You can reach out if you have any privacy-related concerns or simply want to double-check that no data is being
-                collected in the background.
-            </p>
-        </section>
-
-        <p class="footer-note">
-            By installing or using Mr Chicken: Slot Game, you confirm that you are at least 18 years old and that you have read
-            and understood this Privacy Policy.
+      <div class="callout">
+        <h2>Summary</h2>
+        <p class="muted">
+          Mister Chicken is a casual slot-style game that uses <strong>virtual coins only</strong>.
+          There are <strong>no real-money bets</strong>, <strong>no ads</strong>, and we <strong>do not collect personal data</strong>.
         </p>
+
+        <div class="kpi" aria-label="Key privacy facts">
+          <div class="box">
+            <div class="big">No ads</div>
+            <div class="small">No advertising SDKs.</div>
+          </div>
+          <div class="box">
+            <div class="big">No data collection</div>
+            <div class="small">We don’t collect or sell personal information.</div>
+          </div>
+          <div class="box">
+            <div class="big">Virtual currency only</div>
+            <div class="small">No real-money gambling or payouts.</div>
+          </div>
+          <div class="box">
+            <div class="big">Offline-friendly</div>
+            <div class="small">Core gameplay works without accounts.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <section>
+          <h2>1) What the game is</h2>
+          <p>
+            Mister Chicken is a slot-style game intended for entertainment.
+            The game uses <strong>virtual coins</strong> that have <strong>no real-world value</strong>.
+            We do not offer real-money gambling, withdrawals, or prizes that can be exchanged for real money.
+          </p>
+
+          <h2 style="margin-top:14px">2) Information we collect</h2>
+          <p><strong>We do not collect personal information.</strong></p>
+          <ul>
+            <li>No account registration.</li>
+            <li>No analytics tracking tied to you.</li>
+            <li>No advertising identifiers (IDFA) usage.</li>
+            <li>No location data.</li>
+            <li>No contact list, photos, microphone, or camera access for tracking.</li>
+          </ul>
+
+          <h2 style="margin-top:14px">3) Advertising</h2>
+          <p>
+            The game contains <strong>no advertisements</strong> and does not integrate ad networks.
+          </p>
+
+          <h2 style="margin-top:14px">4) Purchases</h2>
+          <p>
+            The game does not sell real-money gambling or provide real-money payouts.
+            Any in-game items (if present) are purely for entertainment and do not represent monetary value.
+          </p>
+        </section>
+
+        <section>
+          <h2>5) Third-party services</h2>
+          <p>
+            We do not use third-party advertising SDKs or sell/share your data with third parties.
+          </p>
+
+          <h2 style="margin-top:14px">6) Children’s privacy</h2>
+          <p>
+            We do not knowingly collect personal information from children.
+            Because we do not collect personal data at all, there is nothing to share or sell.
+          </p>
+
+          <h2 style="margin-top:14px">7) Data security</h2>
+          <p>
+            Since we do not collect personal data, we do not store personal data on our servers.
+            Any gameplay progress (if stored) is kept locally on your device.
+          </p>
+
+          <h2 style="margin-top:14px">8) Changes to this policy</h2>
+          <p>
+            If we make changes, we will update the “Last updated” date at the top of this page.
+          </p>
+
+          <h2 style="margin-top:14px">9) Contact</h2>
+          <p class="muted">
+            If you have questions about this Privacy Policy, you can contact us at:
+            <br />
+            <span class="mono">contact@horizonts.shop</span>
+          </p>
+          <p class="muted" style="font-size:12px">
+            (Replace the email above with your real support email before publishing.)
+          </p>
+        </section>
+      </div>
+
+      <footer>
+        This policy is provided for informational purposes and is not legal advice.
+      </footer>
     </main>
-</div>
+  </div>
 </body>
 </html>
